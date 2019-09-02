@@ -314,8 +314,8 @@ python run.py
 如果需要切换用户，则在 *_config.yaml* 文件中，修改 *is_forced_switch* 的属性为 True。  
 
 -  docker 下运行
-    - 构建 `docker build -t everyday_wechat:v1 .`
-    - 运行 `docker run everyday_wechat:v1`
+    - 构建 `docker build -t  everyday_wechat:v1 .`
+    - 运行 `docker run -it -v /etc/localtime:/etc/localtime:ro --name wechat everyday_wechat:v1`
 
 ## 示例截图：
 
